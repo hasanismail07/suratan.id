@@ -350,18 +350,6 @@ export default function Khitanan04FullDemo() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-blue-800">
-                      Email
-                    </Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      className="bg-white border-blue-200 text-blue-900"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
                     <Label htmlFor="phone" className="text-blue-800">
                       Phone Number
                     </Label>
@@ -426,9 +414,60 @@ export default function Khitanan04FullDemo() {
         </div>
       </div>
 
+      {/* Wishes Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold text-blue-800">Ucapan & Doa</h2>
+          </div>
+
+          <div className="mx-auto max-w-3xl">
+            <div className="space-y-6">
+              {[
+                {
+                  name: "Budi Santoso",
+                  message: "Selamat atas khitanan Zaki! Semoga menjadi anak yang sholeh dan berbakti kepada orang tua.",
+                  date: "2 hari yang lalu",
+                },
+                {
+                  name: "Siti Rahayu",
+                  message: "Alhamdulillah, selamat ya Zaki! Semoga tumbuh menjadi anak yang sehat dan pintar.",
+                  date: "3 hari yang lalu",
+                },
+                {
+                  name: "Hendra Wijaya",
+                  message: "Selamat untuk Zaki! Semoga menjadi anak yang sholeh dan membanggakan orang tua.",
+                  date: "5 hari yang lalu",
+                },
+              ].map((wish, index) => (
+                <Card key={index} className="border-blue-200">
+                  <CardContent className="p-4">
+                    <div className="flex items-start gap-4">
+                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                        <span className="text-blue-700 font-medium">{wish.name.charAt(0)}</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex justify-between">
+                          <h4 className="font-medium text-blue-700">{wish.name}</h4>
+                          <span className="text-xs text-gray-500">{wish.date}</span>
+                        </div>
+                        <p className="mt-1 text-gray-600">{wish.message}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="py-8 bg-blue-900 text-center text-white">
-        <p>Created with ❤️ by Suratan</p>
+      <footer className="bg-blue-800 py-8 text-center text-blue-100">
+        <div className="container mx-auto px-4">
+          <p className="mb-2">Terima kasih atas doa dan kehadiran Anda</p>
+          <p>Created with ❤️ by Suratan</p>
+        </div>
       </footer>
     </div>
   )

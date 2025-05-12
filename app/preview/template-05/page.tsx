@@ -16,15 +16,15 @@ export default function Template05FullDemo() {
       <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-md">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link
-            href="#categories"
+            href="/#categories"
             className="flex items-center text-gray-700 hover:text-[#db2778]"
           >
             <ChevronLeft className="mr-1 h-5 w-5" />
             <span>Kembali ke Preview</span>
           </Link>
           <div className="flex items-center space-x-4">
-            <Button size="sm" className="bg-[#db2778] hover:bg-[#c01e67]">
-              Gunakan Template Ini
+            <Button size="sm" className="bg-gold-500 hover:bg-gold-600">
+              Pernikahan-05
             </Button>
           </div>
         </div>
@@ -91,7 +91,9 @@ export default function Template05FullDemo() {
             </Button>
           </div>
 
-          <div className="absolute bottom-10 left-0 right-0 z-20 text-center">
+          {/* Scroll Down Indicator */}
+
+          <div className="absolute bottom-10 left-0 right-0 z-20 text-center ">
             <div className="animate-bounce">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

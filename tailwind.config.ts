@@ -19,10 +19,6 @@ const config = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)"],
-        serif: ["var(--font-serif)"],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +52,18 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        gold: {
+          50: "#FFF9E5",
+          100: "#FFF0BF",
+          200: "#FFE380",
+          300: "#FFD740",
+          400: "#FFC700",
+          500: "#D4AF37", // Main gold color
+          600: "#B8860B",
+          700: "#996515",
+          800: "#7B5800",
+          900: "#5C4200",
         },
       },
       borderRadius: {

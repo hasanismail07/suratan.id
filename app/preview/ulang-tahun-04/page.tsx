@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import RelatedTemplates from "@/components/related-template"
 
 export default function UlangTahun04Preview() {
   return (
@@ -40,6 +41,9 @@ export default function UlangTahun04Preview() {
       <footer className="py-8 bg-gray-900 text-center text-gray-400">
         <p>Created with ❤️ by Suratan</p>
       </footer>
-    </div>
+
+      {/* Related Templates */}
+      <RelatedTemplates />
+      </div>
   )
 }

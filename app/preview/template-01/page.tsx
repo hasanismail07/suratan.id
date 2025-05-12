@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, Heart } from "lucide-react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import RelatedTemplates from "@/components/related-template"
 
 export default function TemplatePreviewPage() {
   return (
@@ -184,34 +185,8 @@ export default function TemplatePreviewPage() {
           </div>
         </div>
       </div>
-
       {/* Related Templates */}
-      <div className="bg-[#fdf2f8] py-12">
-        <div className="container mx-auto px-4">
-          <h2 className="mb-8 text-2xl font-bold">Template Lainnya</h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="overflow-hidden rounded-lg border bg-white shadow-sm">
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src={`/assets/pernikahan${i}.png`}
-                    alt={`Template ${i}`}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-medium">Template Pernikahan {i}</h3>
-                  <p className="mt-1 text-sm text-gray-600">Undangan digital dengan tema minimalis</p>
-                  <Button variant="outline" className="mt-3 w-full text-sm" asChild>
-                    <Link href={`/preview/template-0${i}`}>Lihat Detail</Link>
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <RelatedTemplates />
     </div>
   )
 }

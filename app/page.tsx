@@ -66,7 +66,7 @@ const khitanTemplates = [
     description: "Desain menarik untuk acara khitanan",
   },
   {
-    id: "khitan-04",
+    id: "khitanan-04",
     image: "/assets/khitanan4.png",
     title: "Template Khitanan 4",
     description: "Desain menarik untuk acara khitanan",
@@ -253,9 +253,6 @@ export default function LandingPage() {
             </Tabs>
 
             <div className="mt-12 text-center">
-              <Link href="/templates"> {/* Assuming you'll have a page for all templates */}
-                <Button className="bg-[#db2778] hover:bg-[#c01e67]">Lihat Semua Template</Button>
-              </Link>
             </div>
           </div>
         </section>
